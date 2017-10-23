@@ -4,6 +4,10 @@ h1, h3 {
 	font-family: "Trebuchet MS";
 }
 
+.active{
+   color: #0481c2;	
+}
+
 .clearfix:after {
     content: '';
     display: table;
@@ -91,9 +95,10 @@ header:after {
 }
 
 .content main {	
-	margin:0;
+	margin:0 0 0 10px;
 	padding:0;
-	float:right;
+	float:left;
+	width: 730px;
 }
 
 .content aside {
@@ -124,7 +129,7 @@ header:after {
 	color:#afaeae;
 }
 .search .btn {
-	float:left;
+	float:right;
 	padding:0;
 	margin:0;
 	border:0;
@@ -144,16 +149,19 @@ header:after {
     float: left;
     border-bottom: 1px solid #8ad8fe;
 }
-
+   
 .read_property{
 	color: #878787;
+    display: block;
+    margin-bottom: 25px;
 }
 
-.image {
+.fon-image {
   background : url(../img/image1.png) no-repeat;
   background-size: 100% 100%;
   width: 730px;
   height: 300px; 
+  margin-bottom: 50px;
 }
 
 .Overlay {
@@ -187,33 +195,82 @@ header:after {
 .block_ryd{
 	display: flex;
 	justify-content: space-between;
-     width: 220px;
-     margin-top: 40px;
+    
+   
 }
 
 .otst{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 footer {
     margin: 0 auto;
     width: 960px;
+    display: flex;
+    justify-content: space-between;
  
 }
 
 .foot1{
 	border-top:3px solid #8ad8fe;
 	width: 220px;
-	float: left;
+	
 
 }
 
 .foot2 {
 	border-top:3px solid #8ad8fe;
 	width: 730px;
-    float: right;
+  
 }
 
 .f3{
 	float: right;
+}
+
+footer ul {
+	list-style:none;
+    float: left;
+    padding-left: 0px;
+}
+footer ul li {
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+footer ul li a {
+	display:inline-block;
+	margin:0;
+    background-image: url('../img/so_link1.png');	
+    width: 22px;
+    height: 22px;
+	margin-right: 6px;
+	
+}
+
+footer:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.fasebook{
+	background-position: 0 0;
+}
+
+.twit{
+	background-position: -21px 0;
+}
+
+.ink{
+	background-position: -44px 0;
+}
+
+.trim{
+	background-position: -66px 0;
+}
+
+.rss{
+	background-position: -89px 0;
 }
